@@ -1,4 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useRouter } from 'expo-router';
 import { useForm } from 'react-hook-form';
 import { Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -18,6 +19,7 @@ const LoginScreen = () => {
     defaultValues: { email: '', password: '' },
     resolver: zodResolver(loginSchema),
   });
+  const router = useRouter();
 
   const onSubmit = (data: LoginSchema) => {
     // TODO: integrar com API de autenticação
@@ -25,7 +27,7 @@ const LoginScreen = () => {
   };
 
   const handleRegister = () => {
-    // TODO: navegar para tela de cadastro
+    router.push('/(auth)/Signup');
   };
 
   return (
@@ -38,7 +40,7 @@ const LoginScreen = () => {
       >
         <View className="flex-1 px-6 pb-8 pt-12">
           <View className="flex-1 gap-10">
-            <View className="flex-row items-center justify-center gap-3">
+            <View className="mb-8 flex-row items-center justify-center gap-3">
               <Image
                 className="h-10 w-48"
                 contentFit="contain"
@@ -84,8 +86,8 @@ const LoginScreen = () => {
 
               <Button
                 withoutDelay
-                className="py-4"
-                color="#2DC653"
+                className="justify-between px-4 py-2"
+                color="#00875F"
                 isLoading={isSubmitting}
                 rightIcon={{
                   name: 'ArrowRight',
@@ -108,8 +110,8 @@ const LoginScreen = () => {
             <Button
               wired
               withoutDelay
-              className="py-4"
-              color="#2DC653"
+              className="justify-between px-4 py-2"
+              color="#00875F"
               rightIcon={{
                 name: 'ArrowRight',
                 size: 22,
