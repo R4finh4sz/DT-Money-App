@@ -127,7 +127,7 @@ const HomeScreen = () => {
             withoutDelay
             className="h-[40px] rounded-md px-2"
             color="#00875F"
-            text="Nova transacao"
+            text="Nova transação"
             textClassName="font-roboto_condensed_bold text-sm"
             width="auto"
           />
@@ -165,7 +165,7 @@ const HomeScreen = () => {
         <View className="h-[42px] flex-row items-center bg-[#121214] pl-3 pr-4">
           <TextInput
             className="font-poppins_regular h-full flex-1 text-sm text-white"
-            placeholder="Busque uma transacao"
+            placeholder="Busque uma transação"
             placeholderTextColor="#7C7C8A"
           />
 

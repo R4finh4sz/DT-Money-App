@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
 const http = axios.create({
-  baseURL: 'https://reciclaonline.com.br/api',
+  baseURL: 'http://localhost:3001',
 });
 
 const maskSensitiveFields = (value: unknown): unknown => {
