@@ -86,7 +86,6 @@ export const AuthProvider = ({
     // const me = await authService.fetchUser();
     // setUser(mapUser(me));
 
-    // --- MOCK LOGIN (Temporário) ---
     await new Promise(resolve => setTimeout(resolve, 1000));
     setUser({
       id: 1,

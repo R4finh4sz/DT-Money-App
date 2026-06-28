@@ -14,7 +14,6 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
-    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@/assets/*": ["./assets/*"]

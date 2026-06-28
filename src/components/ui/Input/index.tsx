@@ -250,9 +250,9 @@ const Input = <TFieldValues extends FieldValues>({
               onPress={() => setPasswordHidden(!passwordHidden)}
             >
               {passwordHidden ? (
-                <EyeSlashIcon color="#ffffff" size={24} strokeWidth={1.5} />
+                <EyeSlashIcon color="#838383" size={24} strokeWidth={1.5} />
               ) : (
-                <EyeIcon color="#ffffff" size={24} strokeWidth={1.5} />
+                <EyeIcon color="#838383" size={24} strokeWidth={1.5} />
               )}
             </Pressable>
           )}
